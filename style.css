@@ -1,0 +1,89 @@
+html {
+  scroll-behavior: smooth;
+  height: 100%;
+}
+
+body {
+  height: 100%;
+  margin: 50px;
+  padding-top:40px;
+}
+
+a {
+  font-family: Montserrat, sans-serif;
+}
+
+.banner {
+  text-align: center;
+}
+
+.center-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.parallax {
+  /* The image used */
+  background-image: url("jumbotron_img.jpg");
+
+  /* Set a specific height */
+  height: 100%;
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  padding: 50px;
+}
+
+#headshot {
+  width: 50px;
+  height: 50px;
+  opacity: 0.8;
+  border-radius: 25px;
+}
+
+#headshot:hover {
+  opacity: 1;
+}
+
+#banner-img {
+  opacity: 0.75;
+  border-radius: 15px;
+  size: 0.8;
+}
+
+#banner-img:hover {
+  opacity: 1;
+}
+
+#banner-txt {
+  font-size: 100px;
+  color: white;
+  font-family: 'Major Mono Display', monospace;
+  text-align: center;
+}
+
+#navbar {
+  background-color: white;
+  padding: 10px;
+  opacity: 0.8;
+}
+
+#description {
+  background-color: white;
+  border-radius: 20px;
+  padding: 20px;
+  opacity: 0.5;
+  font-family: 'Montserrat', sans-serif;
+}
+
+#footer {
+  text-align: center;
+  font-family: 'Montserrat',, sans-serif;
+  background-color: green;
+}
