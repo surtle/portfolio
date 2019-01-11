@@ -5,12 +5,26 @@ html {
 
 body {
   height: 100%;
-  margin: 50px;
-  padding-top:40px;
+  padding-top: 10px;
+  margin: 30px;
 }
 
 a {
   font-family: Montserrat, sans-serif;
+}
+
+h3 {
+  font-family: 'Major Mono Display', monospace;
+  font-size: 35px;
+}
+
+p {
+  font-family: Montserrat, monospace;
+  align-content: center;
+}
+
+table {
+  padding: 20px;
 }
 
 .banner {
@@ -40,15 +54,60 @@ a {
   padding: 50px;
 }
 
+.landscape {
+  /* The image used */
+  background-image: url("landscape_img.jpg");
+
+  height: 10%;
+
+  /* Create the parallax scrolling effect */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.portrait {
+  /* The image used */
+  background-image: url("portrait_img.jpg");
+
+  /* Set a specific height */
+  height: 10%;
+
+  /* Create the parallax scrolling effect */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+}
+
+.text-overlay {
+  vertical-align: middle;
+  text-align: center;
+}
+
+.table{
+    display:table;
+    width:100%;
+    table-layout:fixed;
+}
+
+.table-cell{
+    display:table-cell;
+    width:100px;
+}
+
 #headshot {
   width: 50px;
   height: 50px;
-  opacity: 0.8;
+  opacity: 1;
   border-radius: 25px;
+
+  -webkit-transition: opacity 1s; /* Safari */
+  transition: opacity 1s;
 }
 
 #headshot:hover {
-  opacity: 1;
+  opacity: 0.5;
 }
 
 #banner-img {
@@ -69,21 +128,19 @@ a {
 }
 
 #navbar {
-  background-color: white;
+  background-color: rgba(255, 255, 255, 0.8);
   padding: 10px;
-  opacity: 0.8;
 }
 
 #description {
-  background-color: white;
+  background-color: rgba(255, 255, 255, 0.5);
   border-radius: 20px;
   padding: 20px;
-  opacity: 0.5;
   font-family: 'Montserrat', sans-serif;
 }
 
 #footer {
   text-align: center;
   font-family: 'Montserrat',, sans-serif;
-  background-color: green;
+  background-color: #EDF8F8;
 }
