@@ -27,6 +27,11 @@ table {
   padding: 20px;
 }
 
+span {
+  display: inline-block;
+  vertical-align: middle;
+}
+
 .banner {
   text-align: center;
 }
@@ -54,7 +59,7 @@ table {
   padding: 50px;
 }
 
-.landscape {
+#landscape {
   /* The image used */
   background-image: url("landscape_img.jpg");
 
@@ -64,20 +69,27 @@ table {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+  background-attachment:local;
 }
 
-.portrait {
+#landscape:hover {
+  width: 150px;
+}
+
+#portrait {
   /* The image used */
   background-image: url("portrait_img.jpg");
 
   /* Set a specific height */
   height: 10%;
 
-  /* Create the parallax scrolling effect */
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+}
 
+#portrait:hover {
+  width: 150px;
 }
 
 .text-overlay {
@@ -88,12 +100,18 @@ table {
 .table{
     display:table;
     width:100%;
+    height: 500px;
     table-layout:fixed;
 }
 
 .table-cell{
     display:table-cell;
     width:100px;
+    vertical-align:middle;
+    display: inline-block
+
+    -webkit-transition: width 1s; /* Safari */
+    transition: width 1s;
 }
 
 #headshot {
